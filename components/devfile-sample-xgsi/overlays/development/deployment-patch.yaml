@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-xgsi
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/cin4s-839-0004-tenant/cin4s-839-0004-app/devfile-sample-xgsi@sha256:0bd68ccdc08e450787cca906d93c883e924eef2e6b9e5e10d430eea80de826b3
+        name: my-nodejs
+        resources: {}
+status: {}
